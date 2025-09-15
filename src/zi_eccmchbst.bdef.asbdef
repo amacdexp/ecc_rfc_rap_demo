@@ -1,0 +1,13 @@
+unmanaged implementation in class ZBP_I_ECCMCHBST unique;
+strict (2);
+
+define behavior for ZI_ECCMchbST alias Mchb
+  lock master
+  authorization master ( global )
+{
+  field ( readonly ) matnr, plant, lgort, charg, clabs, uom;
+
+  action TransferStock
+    parameter Z_A_StockTransfer_Params
+    result [1] $self;
+}

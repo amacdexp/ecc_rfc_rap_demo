@@ -1,0 +1,8 @@
+@EndUserText.label: 'ZSRV_ECC_POC_SD'
+define service ZSRV_ECC_POC_SD {
+  expose ZI_EccPlant;
+  expose ZI_EccMaterial;
+  expose ZI_EccStorageLocation;
+  expose ZI_EccMchb;
+  expose ZI_ECCMchbST;
+}
